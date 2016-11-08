@@ -8,3 +8,5 @@ Instructions:
 - Don't catch bombs with your net or it's gameover!
 - Don't let animals or bombs reach the bottom of the screen or it's also gameover!
 Let there be flight!: http://gamepyong.com/jot
+
+Made with Phaser.io
