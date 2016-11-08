@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F2C199FF-A774-4864-8A03-DF91ED520564}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ocelot</RootNamespace>
+    <AssemblyName>Phaser1.0JS2</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\animals.png" />
+    <Content Include="assets\backing.png" />
+    <Content Include="assets\bg.jpg" />
+    <Content Include="assets\circle.png" />
+    <Content Include="assets\circle2.png" />
+    <Content Include="assets\clouds.png" />
+    <Content Include="assets\exp.png" />
+    <Content Include="assets\fire.png" />
+    <Content Include="assets\flare.png" />
+    <Content Include="assets\fonts\mecha.xml" />
+    <Content Include="assets\fonts\mecha_0.png" />
+    <Content Include="assets\gameover.png" />
+    <Content Include="assets\letters.png" />
+    <Content Include="assets\levelbuttonprops.png" />
+    <Content Include="assets\loadingEmpty.png" />
+    <Content Include="assets\loadingFull.png" />
+    <Content Include="assets\net.png" />
+    <Content Include="assets\ocelot.png" />
+    <Content Include="assets\orientation.jpg" />
+    <Content Include="assets\panel.png" />
+    <Content Include="assets\play.png" />
+    <Content Include="assets\restart.png" />
+    <Content Include="assets\spritesheet.png" />
+    <Content Include="assets\systembuttons.png" />
+    <Content Include="assets\title.png" />
+    <Content Include="build\config.xml" />
+    <Content Include="build\icon.png" />
+    <Content Include="build\res\android\hdpi.png" />
+    <Content Include="build\res\android\icon.png" />
+    <Content Include="build\res\android\ldpi.png" />
+    <Content Include="build\res\android\mdpi.png" />
+    <Content Include="build\res\android\xhdpi.png" />
+    <Content Include="build\res\android\xxhdpi.png" />
+    <Content Include="build\res\android\xxxhdpi.png" />
+    <Content Include="build\res\ios\icon%402x.png" />
+    <Content Include="build\res\ios\icon-40%402x.png" />
+    <Content Include="build\res\ios\icon-40.png" />
+    <Content Include="build\res\ios\icon-50%402x.png" />
+    <Content Include="build\res\ios\icon-50.png" />
+    <Content Include="build\res\ios\icon-60%402x.png" />
+    <Content Include="build\res\ios\icon-60%403x.png" />
+    <Content Include="build\res\ios\icon-60.png" />
+    <Content Include="build\res\ios\icon-72%402x.png" />
+    <Content Include="build\res\ios\icon-72.png" />
+    <Content Include="build\res\ios\icon-76%402x.png" />
+    <Content Include="build\res\ios\icon-76.png" />
+    <Content Include="build\res\ios\icon-small%402x.png" />
+    <Content Include="build\res\ios\icon-small.png" />
+    <Content Include="build\res\ios\icon.png" />
+    <Content Include="build\res\screen\android\drawable-land-hdpi\screen.png" />
+    <Content Include="build\res\screen\android\drawable-land-ldpi\screen.png" />
+    <Content Include="build\res\screen\android\drawable-land-mdpi\screen.png" />
+    <Content Include="build\res\screen\android\drawable-land-xhdpi\screen.png" />
+    <Content Include="build\res\screen\android\drawable-port-hdpi\screen.png" />
+    <Content Include="build\res\screen\android\drawable-port-ldpi\screen.png" />
+    <Content Include="build\res\screen\android\drawable-port-mdpi\screen.png" />
+    <Content Include="build\res\screen\android\drawable-port-xhdpi\screen.png" />
+    <Content Include="build\res\screen\ios\Default%402x~iphone.png" />
+    <Content Include="build\res\screen\ios\Default-568h%402x~iphone.png" />
+    <Content Include="build\res\screen\ios\Default-667h.png" />
+    <Content Include="build\res\screen\ios\Default-736h.png" />
+    <Content Include="build\res\screen\ios\Default-Landscape%402x~ipad.png" />
+    <Content Include="build\res\screen\ios\Default-Landscape-736h.png" />
+    <Content Include="build\res\screen\ios\Default-Landscape~ipad.png" />
+    <Content Include="build\res\screen\ios\Default-Portrait%402x~ipad.png" />
+    <Content Include="build\res\screen\ios\Default-Portrait~ipad.png" />
+    <Content Include="build\res\screen\ios\Default~iphone.png" />
+    <Content Include="css\stylesheet.css" />
+    <Content Include="diff\Device.js" />
+    <Content Include="diff\LoaderParser.js" />
+    <Content Include="icons\app_icon_1024x1024.png" />
+    <Content Include="icons\app_icon_114x114.png" />
+    <Content Include="icons\app_icon_120x120.png" />
+    <Content Include="icons\app_icon_144x144.png" />
+    <Content Include="icons\app_icon_152x152.png" />
+    <Content Include="icons\app_icon_256x256.png" />
+    <Content Include="icons\app_icon_512x512.png" />
+    <Content Include="icons\app_icon_57x57.png" />
+    <Content Include="icons\app_icon_60x60.png" />
+    <Content Include="icons\app_icon_72x72.png" />
+    <Content Include="icons\app_icon_76x76.png" />
+    <Content Include="index.html" />
+    <Content Include="index2.html" />
+    <Content Include="jsmin\jsmin.exe" />
+    <Content Include="libs\cocoon.js" />
+    <Content Include="libs\phaser.js" />
+    <Content Include="libs\phaser.min.js" />
+    <Content Include="libs\ScreenShake.js" />
+    <Content Include="scripts\00-Utils.js" />
+    <Content Include="scripts\000-Database.js" />
+    <Content Include="scripts\001-DOMishParser.js" />
+    <Content Include="scripts\003-AdManager.js" />
+    <Content Include="scripts\002-Fireworks.js" />
+    <Content Include="scripts\0091-SubmitNameForm.js" />
+    <Content Include="scripts\01-Boot.js" />
+    <Content Include="scripts\02-Preloader.js" />
+    <Content Include="scripts\04-MainMenu.js" />
+    <Content Include="scripts\03-SplashScreen.js" />
+    <Content Include="scripts\041-ItemEquipScreen.js" />
+    <Content Include="scripts\05-GameScreen.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\audio\gp.ogg" />
+    <Content Include="assets\audio\click.ogg" />
+    <Content Include="assets\audio\drip.ogg" />
+    <Content Include="assets\fonts\mecha.json" />
+    <Content Include="assets\text.json" />
+    <Content Include="assets\sprites.json" />
+    <Content Include="assets\audio\bookFlip2.ogg" />
+    <Content Include="assets\audio\bookFlip3.ogg" />
+    <Content Include="assets\audio\coin.ogg" />
+    <Content Include="assets\audio\correct.ogg" />
+    <Content Include="assets\audio\wrong.ogg" />
+    <Content Include="assets\audio\explosion.ogg" />
+    <Content Include="assets\audio\teleport.ogg" />
+    <Content Include="assets\audio\blip3.ogg" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="build\www\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:61989/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PostBuildEvent>type "$(ProjectDir)scripts\*.js" | "$(ProjectDir)jsmin\jsmin.exe" &gt; "$(ProjectDir)game.js"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

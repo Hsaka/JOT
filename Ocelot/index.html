@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <meta charset="utf-8"/>	
+    <script src="cordova.js"></script>
+    <script src="libs/phaser.js"></script>
+    <script src="libs/cocoon.js"></script>
+    
+    <script src="libs/ScreenShake.js"></script>
+
+    <script src="scripts/00-Utils.js"></script>
+    <script src="scripts/000-Database.js"></script>  
+    <script src="scripts/001-DOMishParser.js"></script>      
+    <script src="scripts/002-Fireworks.js"></script>
+    <script src="scripts/003-AdManager.js"></script>  
+    <script src="scripts/0091-SubmitNameForm.js"></script>  
+    <script src="scripts/01-Boot.js"></script>
+    <script src="scripts/02-Preloader.js"></script>
+    <script src="scripts/03-SplashScreen.js"></script>   
+    <script src="scripts/04-MainMenu.js"></script>
+    <script src="scripts/041-ItemEquipScreen.js"></script> 
+    <script src="scripts/05-GameScreen.js"></script> 
+
+    <!--<script src="game.js"></script>-->
+</head>
+<body>
+    <script type="text/javascript">
+
+        if (navigator.isCocoonJS) {
+            cocoonjsphaser.utils.fixDOMParser();
+        }
+
+        var width = navigator.isCocoonJS ? window.innerWidth : Utils.GlobalSettings.width;
+        var height = navigator.isCocoonJS ? window.innerHeight : Utils.GlobalSettings.height;
+        var dips = window.devicePixelRatio;
+
+        width = width * dips;
+        height = height * dips;
+
+        Utils.GlobalSettings.aspectX = Utils.GlobalSettings.width / width;
+        Utils.GlobalSettings.aspectY = Utils.GlobalSettings.height / height;
+
+        var myGame = new Phaser.Game(Utils.GlobalSettings.width, Utils.GlobalSettings.height, Phaser.AUTO, '');
+        myGame.state.add('boot', Screen.Boot, true);
+        myGame.state.add('preloader', Screen.Preloader);
+        myGame.state.add('splashscreen', Screen.SplashScreen);
+        myGame.state.add('mainmenu', Screen.MainMenu);
+        myGame.state.add('gamescreen', Screen.GameScreen);
+        myGame.state.add('kiteselect', Screen.KiteEquipScreen);
+
+    </script>
+
+
+</body>
+</html>
