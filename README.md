@@ -1,5 +1,5 @@
 # JOT
-Jetpack.Ocelot.Twin game created or GDTT game jam August 2016
+Jetpack.Ocelot.Twin game created for GDTT game jam August 2016
 
 The Bad Guys™ have kidnapped the forest animals and are dropping them from their sky ship. It's up to team J.O.T to catch the animals before they fall to their doom. Watch out for the bombs!
 Instructions:
